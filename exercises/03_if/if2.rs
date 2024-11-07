@@ -1,9 +1,11 @@
 // TODO: Fix the compiler error on this function.
 fn foo_if_fizz(fizzish: &str) -> &str {
     if fizzish == "fizz" {
-        "foo"
+        return "foo"
+    } else if fizzish == "fuzz" {
+        return "bar"
     } else {
-        1
+        return "baz"
     }
 }
 
